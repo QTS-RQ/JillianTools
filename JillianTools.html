@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+	background-color: #FEF5E7;
+}
+</style>
+
+<body> 
+
+<p>When you click the button you get a new drawing prompt.</p>
+
+
+<button onclick="myFunction()">Prompt</button>
+
+<font size="5">
+<p id="OutputLine"></p>
+</font>
+
+
+
+
+<script>
+function myFunction() {
+		var varAdjective = [
+			"red", "hard", "mean", "safe", "caring", "blue", "yellow", "green", "orange", "purple", "pink", "white", "black", "brown", "grey", "ugly", "pretty", "adorable", "agressive", "crying", "confident", "happy", "important", "grumpy", "tired", "odd", "talented", "bright", "clear", "drab", "filthy", "long", "tall", "short", "skinny", "fat", "strange", "fast", "slow", "early", "late", "old", "new", "odd", "angry", "sad", "mad", "bored", "dizzy", "frightened", "hungry", "courageous", "French", "Japanese", "old-fashioned", "rich", "poor", "dirty", "clumsy", "sneezy", "itchy", "lazy", "nervous", "scary", "brave", "jolly", "silly", "modern", "young", "strong", "damp", "fluffy", "wet"			
+		];
+
+		var randomAdjective = varAdjective[Math.floor(Math.random()*varAdjective.length)];
+	
+		var varObject = ["apple", "banana", "pear", "monkey", "platypus", "dog", "cat", "giraffe", "hippo", "elephant", "bird", "worm", "insect", "lizard", "porcupine", "zebra", "lion", "tiger", "bear", "koala", "box", "skillet", "car", "truck", "schoolbus", "dumptruck", "teacher", "child", "baby", "man", "woman", "toaster", "computer", "phone", "book", "fan", "airplane", "ferret", "hog", "whale", "dolphin", "dragon", "unicorn", "pencil", "boat", "fireman", "policeman", "cowboy", "horse", "cow", "bull", "ostrich", "chef", "zookeeper", "rock star", "astronaut", "alien", "rabbit", "duck", "lettuce", "carrot", "potato", "flower", "tractor", "shoe", "boot", "river", "lake", "train", "bowling ball", "football", "soccer ball", "baseball", "bottle", "hammer", "screwdriver", "saw", "nail", "garden", "ketchup", "mustard", "shadow", "pizza", "cupcake", "refrigerator", "mouse", "dancer", "nurse", "planet", "rocket", "star", "sandwich", "tree", "camel", "apple", "banana", "orange", "grapes", "strawberry", "bread", "chicken", "duck", "fish", "shark", "fire", "water", "wind", "farmer", "doll", "corn", "children", "house", "sheep", "party", "mother", "squirrel", "sun", "moon", "table", "toy", "kite", "salt and pepper", "fork and spoon", "dishes", "board games", "bike", "owl", "orangutan", "baboon", "crocodile", "alligator", "caterpillar", "butterfly", "bat", "shark", "fish", "superhero", "penguin", "frog", "beaver", "bear", "bison", "spider", "rhinoceros", "cockatoo", "deer", "fox", "wolf", "armadillo", "crab", "dolphin", "eagle", "flamingo", "snake", "donkey", "seal", "doctor", "panda", "kangaroo", "sloth", "koala", "goat", "jellyfish", "llama", "lobster", "octopus", "clam", "dinosaur", "stingray", "walrus", "woodpecker", "mammoth", "sabretooth", "Abraham Lincoln", "George Washington", "Albert Einstein", "Ben Franklin", "Mark Twain", "Walt Disney", "Napoleon", "Julius Ceasar", "Genghis Khan", "Joan of Arc", "pharaoh", "vampire", "wolfman", "Frankenstein monster", "mummy", "Davy Crockett", "Elvis", "Babe Ruth", "boxer", "ninja", "Sherlock Holmes", "Peter Pan"];
+
+		var randomObject = varObject[Math.floor(Math.random()*varObject.length)];
+
+		var varAction = [
+		"flying", "writing", "typing", "fighting", "running", "shooting", "jumping", "skipping", "laughing", "hurting", "wearing a hat", "wearing glasses", "digging a hole", "swimming", "eating", "spinning", "working out", "talking on the phone", "texting", "in school", "at the beach", "with a mustache", "wearing a dress", "reading a newspaper", "singing a song", "throwing a paper airplane", "hiding", "climbing", "digging a hole", "drinking", "laughing", "playing chess", "playing a sport", "listening to music", "riding a bicycle", "riding a unicycle", "riding a unicorn", "buying groceries", "coaching a sports team", "watching tv", "going to the zoo", "painting", "playing golf", "playing tennis", "going to the moon", "shopping", "acting in a play", "building a sandcastle", "dancing", "sleeping", "walking a dog", "doing homework", "writing a book", "winning a race", "inventing a cure", "inventing a device", "building a car", "building a house", "smelling a flower", "feeling hungry", "tasting soup", "cooking", "doing chores", "exercising", "waking up", "riding a bus", "riding a train", "sweeping", "thinking", "sewing", "opening a door", "washing clothes", "climbing stairs", "talking to a friend", "looking a clouds", "climbing a ladder", "walking in the rain", "carrying an umbrella", "wearing a coat that is too small", "with a beard", "crawling on the floor", "driving a car", "clapping", "knitting", "doing archery", "diving", "skiing", "being really cold", "being really hot", "falling", "bathing", "playing the piano", "playing an instrument", "skateboarding", "surfing", "flying a kite", "fishing", "breaking a vase", "doing a cartwheel", "ironing clothes", "hanging laundry", "making the bed", "brushing teeth", "playing with friends", "getting dressed", "taking pictures", "playing guitar", "waiting for the bus", "washing the dishes", "raking the leaves", "mowing the grass", "teaching a class", "dribbling a basketball", "kicking a ball"	
+		];
+
+		var randomAction = varAction[Math.floor(Math.random()*varAction.length)];
+
+
+
+//		document.body.innerHTML = ;
+//		document.getElementById("DrawingPrompt").value = randomAdjective + ' ' + randomObject + ' ' + randomAction;
+		document.getElementById("OutputLine").innerHTML = randomAdjective + ' ' + randomObject + ' ' + randomAction;
+}
+</script>
+
+</body>
+</html>
